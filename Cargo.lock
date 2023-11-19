@@ -4,11 +4,13 @@ version = 3
 
 [[package]]
 name = "dparse"
-version = "0.1.8"
+version = "0.2.0"
+source = "git+https://github.com/Molkars/dparse.git#fa0e3d7d0ad77b643ef51c640bc2f0589505b1f0"
 
 [[package]]
 name = "dparse-derive"
-version = "0.1.1"
+version = "0.2.0"
+source = "git+https://github.com/Molkars/dparse-derive.git#0578ebdc646fec5b198e9067caa3ecb5498e6374"
 dependencies = [
  "proc-macro2",
  "quote",

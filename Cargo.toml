@@ -6,10 +6,13 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-#dparse = { version = "0.1.0", git = "https://github.com/Molkars/dparse.git" }
-dparse = { path = "../dparse", features = [] }
-dparse-derive = { path = "../dparse-derive" }
+#dparse = { path = "../dparse", features = [] }
+dparse = { git="https://github.com/Molkars/dparse.git", features = ["basic-tokens"] }
+#dparse-derive = { path = "../dparse-derive" }
+dparse-derive = { git="https://github.com/Molkars/dparse-derive.git", features = [] }
 
 [dev-dependencies]
-dparse = { path = "../dparse", features = ["basic"] }
-dparse-derive = { path = "../dparse-derive" }
+#dparse = { path = "../dparse", features = ["basic"] }
+dparse = { git="https://github.com/Molkars/dparse.git", features = ["basic"] }
+#dparse-derive = { path = "../dparse-derive" }
+dparse-derive = { git="https://github.com/Molkars/dparse-derive.git", features = [] }
